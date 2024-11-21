@@ -58,7 +58,7 @@ public class Vista extends JFrame {
 		setLocationRelativeTo(null);
 		
 		lblverNombreUsuario = new JLabel("");
-		lblverNombreUsuario.setForeground(new Color(0, 0, 0));
+		lblverNombreUsuario.setForeground(new Color(60, 60, 60));
 		lblverNombreUsuario.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblverNombreUsuario.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblverNombreUsuario.setBounds(586, 15, 212, 14);

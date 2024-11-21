@@ -80,7 +80,8 @@ public class Controlador {
             	vista.getTxtConsultaSQL().setText(null);
             	vista.getTxtCrearContrasenya().setText(null);
             	vista.getTxtCrearUsuario().setText(null);
-            	vista.getTable().setModel(null);
+            	vista.getTable().setModel(new DefaultTableModel());
+            	vista.getLblError().setVisible(false);
             	
             	// Mostramos como se ve al salir de la sesión
             	vista.getPanelAcceder().setVisible(true);

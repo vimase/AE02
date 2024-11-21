@@ -208,7 +208,9 @@ public class Modelo {
 	 * @param pass Contraseña.
 	 * @return El tipo de usuario si el login es exitoso, de lo contrario una cadena vacía.
 	 */
-	public String loginUsuario(String user, String pass) { 
+	public String loginUsuario(String user, String pass) {
+		user = user.trim();
+		
 		String tipoUsuario = "";
 		try { 
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -269,6 +271,7 @@ public class Modelo {
      * @param passConfirm Confirmación de la contraseña.
      */
 	public void crearUsuario(String user, String pass, String passConfirm) {
+		
 		if (user.isEmpty() || pass.isEmpty() || passConfirm.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "No se admiten campos vacíos", "Alerta", JOptionPane.PLAIN_MESSAGE);
 			return;
