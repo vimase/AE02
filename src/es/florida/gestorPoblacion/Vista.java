@@ -61,7 +61,7 @@ public class Vista extends JFrame {
 		lblverNombreUsuario.setForeground(new Color(60, 60, 60));
 		lblverNombreUsuario.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblverNombreUsuario.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblverNombreUsuario.setBounds(586, 15, 212, 14);
+		lblverNombreUsuario.setBounds(586, 15, 212, 32);
 		getContentPane().add(lblverNombreUsuario);
 		
 		btnDesconectar = new JButton("Desconectarse");
